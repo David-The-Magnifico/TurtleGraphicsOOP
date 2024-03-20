@@ -30,5 +30,16 @@ public class TurtleGraphicsController {
         }
     }
 
+private int[] parseCommands(String input) {
+        String[] commandStrings = input.split(",");
+        int[] commands = new int[commandStrings.length];
+
+        for (int i = 0; i < commandStrings.length; i++) {
+            commands[i] = Integer.parseInt(commandStrings[i].trim());
+        }
+
+        return commands;
+    }
+}
 
     
