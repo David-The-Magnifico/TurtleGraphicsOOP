@@ -68,5 +68,9 @@ public class TurtleGraphicsService {
         turtle.setDirection(newDirection);
     }
 
-    
+    private void turnLeft() {
+        int currentDirection = turtle.getDirection();
+        int newDirection = (currentDirection + 270) % 360;
+        turtle.setDirection(newDirection);
+    }
 }
